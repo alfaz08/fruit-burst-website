@@ -16,6 +16,10 @@
     font-family: 'Lato', sans-serif;
 
   }
+  .image-shadow {
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as needed */
+
+}
 </style>
 
 
@@ -28,7 +32,7 @@
 <body class="font-family">
  <!--Navbar Section-->
 <section class="max-w-screen-xl mx-auto sm:mt-1 mb-0 lg:mt-8">
-  <div class="navbar bg-base-100  lg:bg-[#F85559] lg:rounded-3xl	">
+  <div class="navbar bg-base-100  lg:bg-[#F85559] lg:rounded-full	">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -52,17 +56,14 @@
 
     <div class="navbar-center lg:flex-row ">
       <img src="./images/logo.png" alt="">
-      <h3><a class="font-extrabold text-3xl lg:px-4 lg:text-white">Fruit Brust</a></h3>
+      <h3><a class="font-extrabold text-3xl lg:px-4 lg:text-white">Fruit Burst</a></h3>
     </div>
-
-    
-
     <div class="navbar-end hidden lg:flex">
       <div  class="bg-white  rounded-xl">
-        <input type="text" placeholder="Search.." name="search2" class="rounded-xl">
-        <i class="fa fa-search rounded-xl p-2"></i>
+        <input type="text" placeholder="Search Here.." name="search2" class="rounded-full">
+        <i class="fa fa-search rounded-full p-2"></i>
       </div>
-      
+    
     </div>
 
 
@@ -70,8 +71,58 @@
   </div>
  </section>
 
+<!--Banner Section-->
+<section class="max-w-screen-xl mx-auto sm:mt-1 mb-0 lg:mt-8">
+  <div class="carousel w-full ">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="./images/banner1.png" class="w-full  b" />
+         
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <div class="space-y-4 lg:justify-center lg:mt-4 ">
+          <h2 class="text-white text-xl font-extrabold lg:text-6xl">Exotic tastes at your doorstep</h2>
+          <button class="btn btn-primary ml-20 p-2 border-none bg-[#F85559] lg:ml-96">Shop Now</button>
+        </div>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+
+      </div>
+    </div> 
 
 
-
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="./images/banner2.png" class="max-w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <div class="space-y-4 lg:justify-center lg:mt-4 ">
+          <h2 class="text-white text-xl font-extrabold lg:text-6xl">Exotic tastes at your doorstep</h2>
+          <button class="btn btn-primary ml-20 p-2 border-none bg-[#F85559] lg:ml-96">Shop Now</button>
+        </div>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="./images/banner3.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <div class="space-y-4 lg:justify-center lg:mt-4 ">
+          <h2 class="text-white text-xl font-extrabold lg:text-6xl">Exotic tastes at your doorstep</h2>
+          <button class="btn btn-primary ml-20 p-2 border-none bg-[#F85559] lg:ml-96">Shop Now</button>
+        </div>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img src="./images/banner4.png" class="w-full" />
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <div class="space-y-4 lg:justify-center lg:mt-4 ">
+          <h2 class="text-white text-xl font-extrabold lg:text-6xl">Exotic tastes at your doorstep</h2>
+          <button class="btn btn-primary ml-20 p-2 border-none bg-[#F85559] lg:ml-96">Shop Now</button>
+        </div>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
